@@ -1,6 +1,6 @@
 ---
 - name: Setup Web Server
-  hosts: all
+  hosts: webserver1
   become: true
   tasks:
     - name: Ensure latest versions of required packages are installed
