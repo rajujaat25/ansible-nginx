@@ -16,12 +16,6 @@
         state: started
         enabled: true
 
-    - name: Allow HTTP traffic through firewall
-      firewalld:
-        service: http
-        state: enabled
-        immediate: true
-
     - name: Copy web files
       copy:
         src: web/
